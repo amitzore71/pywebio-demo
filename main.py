@@ -1,6 +1,6 @@
 from pywebio.input import input, input_group, FLOAT, TEXT
 from pywebio.output import put_html, put_table, put_buttons
-from pywebio import start_server
+from pywebio.platform import flask
 
 
 def main():
@@ -49,4 +49,4 @@ def main():
 
 
 if __name__ == "__main__":
-    start_server(main, port=8086, debug=True)
+    flask.start_server(main, port=8086, debug=True)
